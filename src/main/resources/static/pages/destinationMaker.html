@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Maker</title>
+    <link rel="stylesheet" href="/css/destinationMaker.css">
+</head>
+<body>
+<div class="container">
+    <h1>Create a Destination</h1>
+    <form id="destinationForm">
+        <label for="name">Destination Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="category">Category</label>
+        <select id="category" name="category" required>
+            <option value="Beach">Beach</option>
+            <option value="Mountain">Mountain</option>
+            <option value="City">City</option>
+            <option value="Historical">Historical</option>
+        </select>
+
+        <label for="coverPhoto">Upload Cover Photo</label>
+        <input type="file" id="coverPhoto" name="coverPhoto" accept="image/*">
+
+        <button type="submit">Create Destination</button>
+    </form>
+    <div class="success-message" id="successMessage"></div>
+</div>
+
+<script src="/js/destinationMaker.js"></script>
+</body>
+</html>

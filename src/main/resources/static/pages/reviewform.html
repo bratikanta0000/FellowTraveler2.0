@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review</title>
+    <link rel="stylesheet" href="/css/review.css"> <!-- Link to CSS for styling -->
+</head>
+<body>
+<header>
+    <h1>Leave Your Review</h1>
+</header>
+<main>
+    <div id="reviewFormContainer">
+        <h2>Please rate the following aspects of the destination:</h2>
+        <form id="reviewForm">
+            <!-- Likert scale questions for rating -->
+            <div class="question">
+                <label for="question1">How would you rate the overall experience?</label>
+                <input type="range" id="question1" name="question1" min="1" max="5" value="3" step="1">
+                <span id="question1Value">3</span>
+            </div>
+            <div class="question">
+                <label for="question2">How satisfied are you with the facilities?</label>
+                <input type="range" id="question2" name="question2" min="1" max="5" value="3" step="1">
+                <span id="question2Value">3</span>
+            </div>
+            <div class="question">
+                <label for="question3">How would you rate the customer service?</label>
+                <input type="range" id="question3" name="question3" min="1" max="5" value="3" step="1">
+                <span id="question3Value">3</span>
+            </div>
+            <div class="question">
+                <label for="question4">How likely are you to recommend this destination to others?</label>
+                <input type="range" id="question4" name="question4" min="1" max="5" value="3" step="1">
+                <span id="question4Value">3</span>
+            </div>
+            <!-- Text comment -->
+            <div class="question">
+                <label for="comment">Any additional comments:</label>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+            </div>
+            <button type="submit" id="submitReviewButton">Submit Review</button>
+        </form>
+    </div>
+</main>
+<script src="/js/review.js"></script>
+</body>
+</html>
