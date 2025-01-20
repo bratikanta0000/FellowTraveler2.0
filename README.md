@@ -1,4 +1,4 @@
-# fwllowtraveler
+# fellowtraveler
 A travel planning application
 "# TravelPlanner" 
 "# TravelPlanner" 
